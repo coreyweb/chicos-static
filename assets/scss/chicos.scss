@@ -1,0 +1,15 @@
+// set global variables
+@import "_base/config";
+
+// set brand-specific variables
+@import "_themes/_chicos/config";
+
+// global styles
+@import "application"; 
+
+// brand styles
+@import "_themes/_chicos/overrides";
+
+// temp styles until header/footer redesign is complete
+@import "_themes/_chicos/header";
+@import "_themes/_chicos/footer";

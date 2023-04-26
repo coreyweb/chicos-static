@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- this file's contents served to template files as well as the living style guide -->
+
+<title>
+  
+  Lists &middot; Bootstrap
+  
+</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css"> form.asyncForm { display: none; } </style><!-- ? -->
+
+<link data-css="brand-css" rel="stylesheet" href="/ui/assets/css/chicos.css">
+
+
+
+<script src="//use.typekit.net/ytj7xwo.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+<style>
+  body.page-guide {
+  padding-top: 100px;
+  background: #fff;
+}
+body.page-raw {
+  padding-top: 50px;
+}
+
+.navbar-default {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-default .btn-default {
+  background: #444;
+  /*border-radius: 50%;*/
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand {
+  text-decoration: none;
+  color: #999;
+  /*font-weight: bold;*/
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand:hover {
+  text-decoration: none;
+  color: #fff;
+  border-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #333;
+  border-color: transparent;
+  outline: none;
+}
+
+.navbar-default .btn {
+  border-radius: 0;
+  padding: 6px 8px !important;
+}
+.navbar-right .btn-default,
+.navbar-right .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open > .dropdown-toggle.btn-default {
+  border-color: transparent;
+  font-weight: normal;
+}
+.navbar-right .navbar-nav>.active>a,
+.navbar-right .navbar-nav>.active>a:focus,
+.navbar-right .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #900 !important;
+  /*font-weight: bold;*/
+}
+
+.bucket-heading {
+  font-size: 36px;
+  /*line-height: 24px;*/
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+  color: #999;
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+.breadcrumbs {
+  margin-bottom: 20px;
+}
+.standards-nav {
+  position:fixed;
+}
+.example-wrap {
+  margin: 50px 0;
+  /*padding-top: 20px;*/
+/*  border-top: 1px solid #555;*/
+}
+.example-wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.example-wrap header {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.example-wrap header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.example-wrap header h2 {
+  float: left;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: normal;
+  margin: 0 0 0 0;
+  text-transform: uppercase;
+  color: #999;
+  padding-top: 80px;
+  margin-top: -80px;
+}
+.example-wrap header p {
+  float: right;
+  text-align: right;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.example-wrap header p a {
+  text-decoration: none;
+  color: #111;  
+  margin-left: 10px;
+}
+.example-wrap header p a:hover {
+  text-decoration: none;
+  color: #999;  
+}
+.example {
+  clear: both;
+  /*padding: 20px;*/
+  /*border: 1px solid #ddd;*/
+}
+.example-code {
+  display: none;
+  /*margin: 20px -20px -20px -20px;*/
+  border-top: 1px solid #ddd;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  max-height: 300px;
+  overflow: auto;
+}
+.highlight {
+}
+.highlight pre {
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  word-break: normal;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+
+#nav {
+  position: fixed;
+  top: 100px;
+  margin-left: 20px;
+}
+.scrollspy .nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.scrollspy .nav li {
+  font-size: 12px;
+  line-height: 1.1;
+}
+.scrollspy .nav > li > a {
+  padding: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.scrollspy .nav .nav {
+  display: none;
+  padding-left: 20px;
+}
+.scrollspy .nav .nav li {
+  font-size: 12px; line-height: 1.1;
+}
+.scrollspy .nav .nav > li > a {
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: normal;
+}
+.scrollspy .nav .nav > li.active > a {
+  font-weight: bold;
+  color: #900;
+}
+.scrollspy .nav .active .nav {
+  display: block;
+}
+
+.update {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 4px 8px;
+  font-size: 12px;
+  background-color: #eee;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.list-templates {
+  margin: 20px 0 20px 0;
+  font-size: 14px;
+  line-height: 2em;
+}
+.list-templates a {
+  text-decoration: none;
+}
+.list-templates a:hover {
+  text-decoration: underline;
+}
+/*
+ul li h2 {
+  margin-top: 20px;
+}*/
+</style>
+
+</head>
+
+<body class="page-guide" data-spy="scroll" data-target=".scrollspy">
+  
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/ui/">Chico's FAS</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+        
+        <li class="active"><a href="/ui/atoms/">Atoms <span class="sr-only">(current)</span></a></li>
+        
+
+        
+        <li><a href="/ui/molecules/">Molecules</a></li>
+        
+
+        
+        <li><a href="/ui/pages/">Pages</a></li>
+        
+
+        <!--
+        <li><a href="/ui/prototypes/">Prototypes</a></li>
+        -->
+
+        <!-- 
+        <li><a href="/ui/docs/">Development Guide</a></li>
+         -->
+
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right nav-pills">
+        <li class="active"><a href="#" rel="/ui/assets/css/chicos.css">C</a></li>
+        <li><a href="#" rel="/ui/assets/css/soma.css">S</a></li>
+        <li><a href="#" rel="/ui/assets/css/whbm.css">W</a></li>
+        <li><a href="#" rel="/ui/assets/css/boston.css">B</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+  <div class="breadcrumbs">
+    <a href="../index.html">Back to Atoms</a>
+  </div>
+
+  <h1>Lists</h1>
+
+  <section class="example-wrap">
+    <h2 id="list-ul">Unordered List</h2>
+    <p><a href="ul.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+    <div class="example">
+      <div class="example-display">
+        <ul>
+  <li>Individual style. Clean, modern lines. The exclusive Black Label by Chico's&trade; collection.</li>
+  <li>Concealed snap styling.</li>
+  <li>Chest and hand pockets.
+    <ul>
+      <li>Chest pocket length: 12.5"</li>
+      <li>Hand pocket length: 5"</li>
+    </ul>
+  </li>
+  <li>Length: 23.5".</li>
+  <li>80% cotton, 20% rayon.</li>
+  <li>Machine wash. Imported.</li>
+</ul>
+      </div>
+      <div class="example-code">
+        <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Individual style. Clean, modern lines. The exclusive Black Label by Chico's<span class="ni">&amp;trade;</span> collection.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Concealed snap styling.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Chest and hand pockets.
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Chest pocket length: 12.5"<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Hand pocket length: 5"<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Length: 23.5".<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>80% cotton, 20% rayon.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Machine wash. Imported.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="example-wrap">
+    <h2 id="list-ul-unstyled">Unordered List (unstyled)</h2>
+    <p><a href="ul-unstyled.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+    <div class="example">
+      <div class="example-display">
+        <ul class="list-unstyled">
+  <li>Individual style. Clean, modern lines. The exclusive Black Label by Chico's&trade; collection.</li>
+  <li>Concealed snap styling.</li>
+  <li>Chest and hand pockets.</li>
+  <li>Length: 23.5".</li>
+  <li>80% cotton, 20% rayon.</li>
+  <li>Machine wash. Imported.</li>
+</ul>
+      </div>
+      <div class="example-code">
+        <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Individual style. Clean, modern lines. The exclusive Black Label by Chico's<span class="ni">&amp;trade;</span> collection.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Concealed snap styling.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Chest and hand pockets.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Length: 23.5".<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>80% cotton, 20% rayon.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Machine wash. Imported.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="example-wrap">
+    <h2 id="list-ol">Ordered List</h2>
+    <p><a href="ol.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+    <div class="example">
+      <div class="example-display">
+        <ol>
+  <li>Lorem ipsum dolor sit amet.</li>
+  <li>Consequatur nihil consequuntur voluptas a quae.</li>
+  <li>Soluta placeat praesentium adipisci sint nihil amet, similique eos.</li>
+</ol>
+      </div>
+      <div class="example-code">
+        <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Lorem ipsum dolor sit amet.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Consequatur nihil consequuntur voluptas a quae.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Soluta placeat praesentium adipisci sint nihil amet, similique eos.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span></code></pre></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="example-wrap">
+    <h2 id="list-dl">Definition List</h2>
+    <p><a href="dl.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+    <div class="example">
+      <div class="example-display">
+        <dl>
+  <dt>Lorem ipsum dolor sit amet</dt>
+  <dd>
+    Quo deserunt temporibus tempora sit officiis maxime eum nemo ducimus. Quasi accusamus, aliquid tenetur neque quibusdam magnam corporis doloribus fuga. Molestias, optio.
+  </dd>
+  <dt>Corporis omnis illo odio ullam nam accusamus</dt>
+  <dd>
+    Aut dolores hic ducimus blanditiis adipisci architecto inventore fugiat. Minima officia numquam nobis inventore veritatis nostrum, voluptatibus voluptas deserunt iure ea! Adipisci.
+  </dd>
+</dl>
+      </div>
+      <div class="example-code">
+        <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;dl&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>
+    Quo deserunt temporibus tempora sit officiis maxime eum nemo ducimus. Quasi accusamus, aliquid tenetur neque quibusdam magnam corporis doloribus fuga. Molestias, optio.
+  <span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Corporis omnis illo odio ullam nam accusamus<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>
+    Aut dolores hic ducimus blanditiis adipisci architecto inventore fugiat. Minima officia numquam nobis inventore veritatis nostrum, voluptatibus voluptas deserunt iure ea! Adipisci.
+  <span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span></code></pre></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="example-wrap">
+    <h2 id="list-dl-horizontal">Definition List (horizontal)</h2>
+    <p><a href="dl-horizontal.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+    <div class="example">
+      <div class="example-display">
+        <dl class="dl-horizontal">
+  <dt>Ship To Name:</dt>
+  <dd>Brian MacDonald</dd>
+  <dt>Ship To Address:</dt>
+  <dd>
+    123 Main St.<br>
+    Naples, FL 34104<br>
+    USA
+  </dd>
+  <dt>Shipping Method:</dt>
+  <dd>Parcel Post</dd>
+  <dt>Order Total:</dt>
+  <dd>$307.00</dd>
+</dl>
+      </div>
+      <div class="example-code">
+        <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"dl-horizontal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Ship To Name:<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>Brian MacDonald<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Ship To Address:<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>
+    123 Main St.<span class="nt">&lt;br&gt;</span>
+    Naples, FL 34104<span class="nt">&lt;br&gt;</span>
+    USA
+  <span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Shipping Method:<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>Parcel Post<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Order Total:<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>$307.00<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span></code></pre></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="col-md-3">
+  <ul class="nav standards-nav">
+    <li><a href="#list-ul">Unordered List</a></li>
+    <li><a href="#list-ul-unstyled">Unordered List (unstyled)</a></li>
+    <li><a href="#list-ol">Ordered List</a></li>
+    <li><a href="#list-dl">Definition List</a></li>
+    <li><a href="#list-dl-horizontal">Definition List (horizontal)</a></li>
+  </ul>
+</div>
+
+<script>
+$(function(){
+  $('.toggle-code-example').click(function(){
+      $(this).parent().parent().find('.example-code').toggle();
+      return false;
+  });
+});
+</script>
+
+  </div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+
+<script src="/ui/assets/js/jquery.zoom.min.js"></script>
+
+
+<script src="/ui/assets/js/select/bootstrap-select.min.js"></script>
+
+<script src="/ui/assets/js/site.js"></script>
+<script src="/ui/assets/js/prototyping/style-switcher.js"></script>
+
+
+<script>
+  $('.selectpicker').selectpicker();
+</script>
+
+
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover();
+  })
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+
+<script>
+  $('.modal .product-img-wrap').zoom({url: 'http://www.chicos.com/Product_Images/570136590_1440_large.jpg'});
+</script>
+
+
+</body>
+</html>

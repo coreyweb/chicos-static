@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- this file's contents served to template files as well as the living style guide -->
+
+<title>
+  
+  Tables &middot; Bootstrap
+  
+</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css"> form.asyncForm { display: none; } </style><!-- ? -->
+
+<link data-css="brand-css" rel="stylesheet" href="/ui/assets/css/chicos.css">
+
+
+
+<script src="//use.typekit.net/ytj7xwo.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+<style>
+  body.page-guide {
+  padding-top: 100px;
+  background: #fff;
+}
+body.page-raw {
+  padding-top: 50px;
+}
+
+.navbar-default {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-default .btn-default {
+  background: #444;
+  /*border-radius: 50%;*/
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand {
+  text-decoration: none;
+  color: #999;
+  /*font-weight: bold;*/
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand:hover {
+  text-decoration: none;
+  color: #fff;
+  border-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #333;
+  border-color: transparent;
+  outline: none;
+}
+
+.navbar-default .btn {
+  border-radius: 0;
+  padding: 6px 8px !important;
+}
+.navbar-right .btn-default,
+.navbar-right .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open > .dropdown-toggle.btn-default {
+  border-color: transparent;
+  font-weight: normal;
+}
+.navbar-right .navbar-nav>.active>a,
+.navbar-right .navbar-nav>.active>a:focus,
+.navbar-right .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #900 !important;
+  /*font-weight: bold;*/
+}
+
+.bucket-heading {
+  font-size: 36px;
+  /*line-height: 24px;*/
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+  color: #999;
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+.breadcrumbs {
+  margin-bottom: 20px;
+}
+.standards-nav {
+  position:fixed;
+}
+.example-wrap {
+  margin: 50px 0;
+  /*padding-top: 20px;*/
+/*  border-top: 1px solid #555;*/
+}
+.example-wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.example-wrap header {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.example-wrap header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.example-wrap header h2 {
+  float: left;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: normal;
+  margin: 0 0 0 0;
+  text-transform: uppercase;
+  color: #999;
+  padding-top: 80px;
+  margin-top: -80px;
+}
+.example-wrap header p {
+  float: right;
+  text-align: right;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.example-wrap header p a {
+  text-decoration: none;
+  color: #111;  
+  margin-left: 10px;
+}
+.example-wrap header p a:hover {
+  text-decoration: none;
+  color: #999;  
+}
+.example {
+  clear: both;
+  /*padding: 20px;*/
+  /*border: 1px solid #ddd;*/
+}
+.example-code {
+  display: none;
+  /*margin: 20px -20px -20px -20px;*/
+  border-top: 1px solid #ddd;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  max-height: 300px;
+  overflow: auto;
+}
+.highlight {
+}
+.highlight pre {
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  word-break: normal;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+
+#nav {
+  position: fixed;
+  top: 100px;
+  margin-left: 20px;
+}
+.scrollspy .nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.scrollspy .nav li {
+  font-size: 12px;
+  line-height: 1.1;
+}
+.scrollspy .nav > li > a {
+  padding: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.scrollspy .nav .nav {
+  display: none;
+  padding-left: 20px;
+}
+.scrollspy .nav .nav li {
+  font-size: 12px; line-height: 1.1;
+}
+.scrollspy .nav .nav > li > a {
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: normal;
+}
+.scrollspy .nav .nav > li.active > a {
+  font-weight: bold;
+  color: #900;
+}
+.scrollspy .nav .active .nav {
+  display: block;
+}
+
+.update {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 4px 8px;
+  font-size: 12px;
+  background-color: #eee;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.list-templates {
+  margin: 20px 0 20px 0;
+  font-size: 14px;
+  line-height: 2em;
+}
+.list-templates a {
+  text-decoration: none;
+}
+.list-templates a:hover {
+  text-decoration: underline;
+}
+/*
+ul li h2 {
+  margin-top: 20px;
+}*/
+</style>
+
+</head>
+
+<body class="page-guide" data-spy="scroll" data-target=".scrollspy">
+  
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/ui/">Chico's FAS</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+        
+        <li class="active"><a href="/ui/atoms/">Atoms <span class="sr-only">(current)</span></a></li>
+        
+
+        
+        <li><a href="/ui/molecules/">Molecules</a></li>
+        
+
+        
+        <li><a href="/ui/pages/">Pages</a></li>
+        
+
+        <!--
+        <li><a href="/ui/prototypes/">Prototypes</a></li>
+        -->
+
+        <!-- 
+        <li><a href="/ui/docs/">Development Guide</a></li>
+         -->
+
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right nav-pills">
+        <li class="active"><a href="#" rel="/ui/assets/css/chicos.css">C</a></li>
+        <li><a href="#" rel="/ui/assets/css/soma.css">S</a></li>
+        <li><a href="#" rel="/ui/assets/css/whbm.css">W</a></li>
+        <li><a href="#" rel="/ui/assets/css/boston.css">B</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+  <div class="breadcrumbs">
+    <a href="../index.html">Back to Atoms</a>
+  </div>
+
+  <h1>Tables</h1>
+
+  <section class="example-wrap">
+    <h2 id="basic">Basic</h2>
+    <p><a href="basic.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+    <div class="example">
+      <div class="example-display">
+        <div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Lorem Ipsum</th>
+        <th>Dolor Site Amet</th>
+        <th>Consectetur Elit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Praesentium</td>
+        <td>Tempora</td>
+        <td>Ratione accusamus minus</td>
+      </tr>
+      <tr>
+        <td>Accusantium</td>
+        <td>Adipisicing</td>
+        <td>Laborum maxime suscipit fugit</td>
+      </tr>
+      <tr>
+        <td>Dolor</td>
+        <td>Nihil</td>
+        <td>Voluptates at modi, veritatis</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+      </div>
+      <div class="example-code">
+        <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;th&gt;</span>Lorem Ipsum<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th&gt;</span>Dolor Site Amet<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th&gt;</span>Consectetur Elit<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Praesentium<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Tempora<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Ratione accusamus minus<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Accusantium<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Adipisicing<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Laborum maxime suscipit fugit<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Dolor<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Nihil<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Voluptates at modi, veritatis<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="col-md-3">
+  <ul class="nav standards-nav">
+    <li><a href="#table-basic">Basic</a></li>
+  </ul>
+</div>
+  </div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+
+<script src="/ui/assets/js/jquery.zoom.min.js"></script>
+
+
+<script src="/ui/assets/js/select/bootstrap-select.min.js"></script>
+
+<script src="/ui/assets/js/site.js"></script>
+<script src="/ui/assets/js/prototyping/style-switcher.js"></script>
+
+
+<script>
+  $('.selectpicker').selectpicker();
+</script>
+
+
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover();
+  })
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+
+<script>
+  $('.modal .product-img-wrap').zoom({url: 'http://www.chicos.com/Product_Images/570136590_1440_large.jpg'});
+</script>
+
+
+</body>
+</html>

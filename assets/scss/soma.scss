@@ -1,0 +1,15 @@
+// set global variables
+@import "_base/config";
+
+// set brand-specific variables
+@import "_themes/_soma/config";
+
+// global styles
+@import "application"; 
+
+// brand styles
+@import "_themes/_soma/overrides";
+
+// temp styles until header/footer redesign is complete
+@import "_themes/_soma/header";
+@import "_themes/_soma/footer";

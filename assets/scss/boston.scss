@@ -1,0 +1,15 @@
+// set global variables
+@import "_base/config";
+
+// set brand-specific variables
+@import "_themes/_boston/config";
+
+// global styles
+@import "application"; 
+
+// brand styles
+@import "_themes/_boston/overrides";
+
+// temp styles until header/footer redesign is complete
+@import "_themes/_boston/header";
+@import "_themes/_boston/footer";

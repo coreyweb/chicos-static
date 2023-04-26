@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- this file's contents served to template files as well as the living style guide -->
+
+<title>
+  
+  Chico's Charitable Giving Philosophy/Process &middot; Bootstrap
+  
+</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css"> form.asyncForm { display: none; } </style><!-- ? -->
+
+<link data-css="brand-css" rel="stylesheet" href="/ui/assets/css/chicos.css">
+
+
+
+<script src="//use.typekit.net/ytj7xwo.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+<style>
+  body.page-guide {
+  padding-top: 100px;
+  background: #fff;
+}
+body.page-raw {
+  padding-top: 50px;
+}
+
+.navbar-default {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-default .btn-default {
+  background: #444;
+  /*border-radius: 50%;*/
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand {
+  text-decoration: none;
+  color: #999;
+  /*font-weight: bold;*/
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand:hover {
+  text-decoration: none;
+  color: #fff;
+  border-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #333;
+  border-color: transparent;
+  outline: none;
+}
+
+.navbar-default .btn {
+  border-radius: 0;
+  padding: 6px 8px !important;
+}
+.navbar-right .btn-default,
+.navbar-right .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open > .dropdown-toggle.btn-default {
+  border-color: transparent;
+  font-weight: normal;
+}
+.navbar-right .navbar-nav>.active>a,
+.navbar-right .navbar-nav>.active>a:focus,
+.navbar-right .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #900 !important;
+  /*font-weight: bold;*/
+}
+
+.bucket-heading {
+  font-size: 36px;
+  /*line-height: 24px;*/
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+  color: #999;
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+.breadcrumbs {
+  margin-bottom: 20px;
+}
+.standards-nav {
+  position:fixed;
+}
+.example-wrap {
+  margin: 50px 0;
+  /*padding-top: 20px;*/
+/*  border-top: 1px solid #555;*/
+}
+.example-wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.example-wrap header {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.example-wrap header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.example-wrap header h2 {
+  float: left;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: normal;
+  margin: 0 0 0 0;
+  text-transform: uppercase;
+  color: #999;
+  padding-top: 80px;
+  margin-top: -80px;
+}
+.example-wrap header p {
+  float: right;
+  text-align: right;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.example-wrap header p a {
+  text-decoration: none;
+  color: #111;  
+  margin-left: 10px;
+}
+.example-wrap header p a:hover {
+  text-decoration: none;
+  color: #999;  
+}
+.example {
+  clear: both;
+  /*padding: 20px;*/
+  /*border: 1px solid #ddd;*/
+}
+.example-code {
+  display: none;
+  /*margin: 20px -20px -20px -20px;*/
+  border-top: 1px solid #ddd;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  max-height: 300px;
+  overflow: auto;
+}
+.highlight {
+}
+.highlight pre {
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  word-break: normal;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+
+#nav {
+  position: fixed;
+  top: 100px;
+  margin-left: 20px;
+}
+.scrollspy .nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.scrollspy .nav li {
+  font-size: 12px;
+  line-height: 1.1;
+}
+.scrollspy .nav > li > a {
+  padding: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.scrollspy .nav .nav {
+  display: none;
+  padding-left: 20px;
+}
+.scrollspy .nav .nav li {
+  font-size: 12px; line-height: 1.1;
+}
+.scrollspy .nav .nav > li > a {
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: normal;
+}
+.scrollspy .nav .nav > li.active > a {
+  font-weight: bold;
+  color: #900;
+}
+.scrollspy .nav .active .nav {
+  display: block;
+}
+
+.update {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 4px 8px;
+  font-size: 12px;
+  background-color: #eee;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.list-templates {
+  margin: 20px 0 20px 0;
+  font-size: 14px;
+  line-height: 2em;
+}
+.list-templates a {
+  text-decoration: none;
+}
+.list-templates a:hover {
+  text-decoration: underline;
+}
+/*
+ul li h2 {
+  margin-top: 20px;
+}*/
+</style>
+
+  
+</head>
+<body mobile-experience="desktop" class="">
+
+  <div id="page-wrap">
+    
+    <!-- header -->
+<div id="header-parent" role="banner">
+  <!-- will contain all header content -->
+  <!-- Border Free chicos -->
+
+  <div id="international-account-nav-wrapper" class="hidden-xs hidden-sm">
+    <div id="account-nav-parent">
+      <div id="account-nav">
+        <div id="account-info">
+          <ul class="account-info-list">
+            <li class="account-sign-in">
+              <a onclick="s_objectID='My Account';" href="https://alpha.chicos.com/store/account/login.jsp"><span>Sign In</span></a>
+              <span class="account-header-spacer">|</span>
+            </li>
+            <li class="account-register">
+              <a onclick="s_objectID='My Account';" href="https://alpha.chicos.com/store/account/registration.jsp"><span>Register</span></a>
+              <span class="account-header-spacer">|</span>
+            </li>
+            <li class="header-welcome">
+              <a href="http://alpha.chicos.com/store/page.jsp?id=97&amp;ICID=header_emailSignup">Sign Up for Email and Save 10% today!</a>
+            </li>
+          </ul>
+        </div><!-- #account-info -->
+      </div><!-- #account-nav -->
+      <div id="location-nav">
+        <ul class="location-list">
+          <li class="location-store-locator">
+            <a href="http://alpha.chicos.com/store/store_locator.jsp" onclick="setNonSecureUrls(this);s_objectID='find a boutique';">Find a boutique</a>
+            <span class="location-header-spacer"> | </span>
+          </li>
+          <li class="location-store-switch" style="cursor:pointer;">
+            Ship to: 
+            <a id="contextSelectorLink" href="#">
+              <span id="ibf-flag"><img src="/ui/assets/imgs/chs-aboutUs_files/USA.jpg"></span>
+              <span id="ibf-countryName">United States</span>
+            </a>
+          </li>
+        </ul>
+      </div><!-- #location-nav -->
+
+    </div><!-- #account-nav-parent -->
+  </div><!-- #international-account-nav-wrapper -->
+  <!-- End Account Header -->
+
+  
+
+  <div id="header" data-responsive="" data-mobile-experience="desktop">
+    <div id="desktop-header" class="header-content hidden-xs hidden-sm">
+      
+      <div class="header-logo hidden-xs hidden-sm">
+        <a onclick="s_objectID='Chicos';" href="http://alpha.chicos.com/store"><div class="brand-logo"></div></a>
+      </div>
+
+      <div id="header-promo">
+        <!-- Test and Target JS reference -->
+        <script type="text/javascript" src="header/mbox.js"></script>
+        <style>
+          .mboxDefault { visibility:hidden; }
+        </style>
+        <div style="visibility: visible; display: block;" class="mboxDefault"></div>
+        <script type="text/javascript">
+          mboxCreate('chicos_global_promo1', 'customerType=Guest', 'categoryId=', 'subCategoryId=', 'customerNumber=', ('omnitureCookie='+readCookie('s_vi')), 'mbox3rdPartyId='+readCookie('s_vi'), 'user.categoryId=');
+        </script>
+        <div id="mboxMarker-default-chicos_global_promo1-0" style="visibility:hidden;display:none">&nbsp;</div>
+        <script src="header/standard.txt" language="JavaScript"></script>
+        <div id="header-promo-body">
+          <!-- Start Mobile -->
+          <div class="moovweb_globalbanner"> 
+            <a href="http://alpha.chicos.com/store/category/new-arrivals/cat40036?viewAll=true&amp;icid=GPS-50OffHPI-Cpn89888-Mobile-USA">
+              <img src="/ui/assets/imgs/header/150226_MGPS_CHS_FlashSale_FINAL.gif" alt="Get 50% Your Highest-Priced Item | Use Code 89888 | Shop Now " border="0"> 
+            </a>
+          </div>
+          <!-- End Mobile --> 
+          <!-- Start Tablet --> 
+          <div class="mw_tablet_only">
+            <a href="http://alpha.chicos.com/store/category/new-arrivals/cat40036?viewAll=true&amp;icid=GPS-50OffHPI-Cpn89888-Tablet-USA"> 
+              <img src="/ui/assets/imgs/header/150226_TGPS_CHS_FlashSale_FINAL.gif" alt="Get 50% Your Highest-Priced Item | Use Code 89888 | Shop Now " border="0">
+            </a>
+          </div>
+          <!-- End Tablet --> 
+          <div id="gps"> 
+            <div id="first"> 
+              <img src="/ui/assets/imgs/header/150226_GPS_CHS_FlashSale_FINAL.gif" alt="Get 50% Your Highest-Priced Item | Use Code 89888 | Shop Now | Details" usemap="#mapGPS1" border="0"> 
+            </div><!-- #first --> 
+          </div><!-- #gps -->
+          
+          <!-- Start Maps --> 
+          <map name="mapGPS1" id="mapGPS1"> 
+            <area shape="rect" coords="392,2,447,24" href="http://alpha.chicos.com/web_assets/img/20150226/50Off_details.html" rel="modalTriggerGPS 400 180" alt="Details" class="modalTriggerGPS" onclick="var s=s_gi('chchicoscomprod'); s.tl(this,'o','GPS-50OffHPI-Cpn89888-Details-USA');"> 
+            <area shape="rect" coords="0,0,450,55" href="http://alpha.chicos.com/store/category/new-arrivals/cat40036?icid=GPS-50OffHPI-Cpn89888-USA"> 
+          </map>
+          <!-- End Maps --> 
+          
+          <!-- Start Modals --> 
+          <div class="modalWindow jqmID1" id="modalTriggerGPS">
+            <table border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr class="modalControls">
+                  <td class="modalCaption"></td>
+                  <td align="right"><a class="modalClose"></a></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <div class="modalContent"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- #modalTriggerGPS -->
+          <script type="text/javascript"> 
+            $('#modalTriggerGPS').jqm({ 
+            ajax: '@href', 
+            title: '@title', 
+            trigger: '.modalTriggerGPS' 
+            }); 
+          </script> 
+          <!-- End Modals -->
+
+        </div><!-- #header-promo-body -->
+      </div><!-- #header-promo -->
+
+      <div id="tertiary-nav">
+        <div id="dynamic-form">
+
+          <!-- TEMP FROM JOSH -->
+          <div id="endeca-search" class="icons-search-small"><span class="search-title">Search</span> <span class="search-icon-wrap"><i class="fa fa-fw fa-search"></i></span></div>
+          <!-- /TEMP FROM JOSH -->
+
+          <div>
+            <form style="display: none;" action="/store/browse" name="headerFasSearch" class="header-search-form">
+              <input name="Dy" value="1" type="hidden">
+              <input name="Nty" value="1" type="hidden">
+              <input name="Ntt" title="Search" class="header-search-input" id="header-search-input" type="search">
+              <button class="header-search-button button" name="ensearch" type="submit">Search</button>
+            </form>
+          </div>
+          <div id="pc-main" style="display: none !important;">
+            <div id="pc-overflow">
+              <div id="pc-wrapper">
+                <div id="pc-shadow">
+                  <div id="pc-container-shadow-body">
+                    <div id="pc-container">
+                      <div id="pc-header">
+                        <div class="divClickArea">
+                          <span id="pc-title-yem">Your Emerging Wardrobe</span>
+                          <span id="pc-bag-count"> (1 Item)</span>
+                        </div>
+                        <span id="pc-close"><a href="#"><i class="fa fa-fw fa-times-circle"></i></a></span>
+                      </div><!-- .pc-header -->
+                      <script>
+                        $('.divClickArea').click(function(){
+                          window.location = "http://alpha.chicos.com/store/checkout/cart.jsp";
+                        });
+                      </script>
+                      <div id="pc-cart-status"></div>
+                      <div id="pc-content">
+                        <div class="" id="pc-items">
+                          <div class="pc-errors"></div>
+                          <div id="pc-item-ci31474000003_1" class="pc-product">
+                            <div class="pc-product-divider pc-product-divider-first"></div>
+                            <div class="pc-product-image">
+                              <img src="/ui/assets/imgs/header/570026137_1440_thumb2.jpg" height="65" width="52">
+                            </div>
+                            <div class="pc-product-info-container">
+                              <div class="pc-product-info-row1">
+                                <div class="pc-title">Microfiber Contemporary Tank</div>
+                                <div class="pc-price">$19.00</div>
+                              </div><!-- .pc-product-info-row1 -->
+                              <div class="pc-product-info-row2">
+                                <table class="pc-details" cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr class="pc-color">
+                                      <td class="pc-label">Color:</td>
+                                      <td class="pc-value" colspan="2">Putty</td>
+                                    </tr>
+                                    <tr class="pc-size">
+                                      <td class="pc-label">Size:</td>
+                                      <td class="pc-value" colspan="2">Size 0 (4/6, XS)</td>
+                                    </tr>
+                                    <tr class="pc-qty">
+                                      <td class="pc-label" style="">Qty:</td>
+                                      <td class="pc-value" style="">1</td>
+                                      <td class="pc-controls-wrapper">
+                                        <div class="pc-controls">
+                                          <a class="pcItemEdit" href="http://alpha.chicos.com/store/checkout/cart.jsp" rel="ci31474000003">edit</a>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <div class="clear"></div>
+                              </div><!-- .pc-product-info-row2 -->
+                            </div><!-- .pc-product-info-container -->
+                          </div><!-- .pc-product -->
+                          
+                          <div id="pc-items-empty" style="display: none;">
+                            <div class="pc-noItems">There are no items in your shopping bag.</div>
+                          </div>
+                        </div><!-- #pc-items -->
+                        <div id="pc-summary-wrapper">
+                          <div id="pc-summary">
+                            <div style="display: block;" id="pc-totals">
+                              <div id="pc-title">Order Summary</div>
+                              <div id="pc-subtotal" class="pc-totals-row">
+                                <div class="pc-label">Item Subtotal</div>
+                                <div class="pc-value">$19.00</div>
+                              </div>
+                              <div style="display: none;" id="pc-shipping" class="pc-totals-row">
+                                <div class="pc-label">Estimated Shipping</div>
+                                <div class="pc-value"></div>
+                              </div>
+                              <div id="pc-promos"></div>
+                              <div class="clear"></div>
+                              <div id="pc-qualifying-msgs"></div>
+                              <div id="pc-grandtotal" class="pc-totals-row">
+                                <div class="pc-label">ESTIMATED TOTAL<span class="pc-label-sub">(Before Tax)</span></div>
+                                <div class="pc-value">$19.00</div>
+                              </div>
+                            </div><!-- #pc-totals -->
+                            <div id="pc-buttons">
+                              <div id="pc-nocheckout">
+                                <div id="pc-shopbag">
+                                  <a onclick="s_objectID='Shopping Bag'" href="http://alpha.chicos.com/store/checkout/cart.jsp">
+                                    View Shopping Bag
+                                  </a>
+                                  <span class="pc-link-pointer">&gt;</span>
+                                </div><!-- #pc-shopbag -->
+                                <div id="pc-continue">
+                                  <a href="#">Continue Shopping</a>
+                                  <span class="pc-link-pointer">&gt;</span>
+                                </div>
+                              </div><!-- #pc-nocheckout -->
+                              <a style="display: inline;" id="pc-btn-checkout" href="https://alpha.chicos.com/store/account/checkout_login.jsp?sourcePage=persistentCart" title="Checkout" onclick="resetOmniturePageName();set_event_send_page_tag('preCheckout,event14');set_page_send_tag('chicos','login','persistentCart');">
+                                <img src="/ui/assets/imgs/header/chs_checkout_btn.gif" alt="CHECKOUT &gt;" border="0">
+                              </a>
+                              <a id="pc-btn-checkout-disabled" href="javascript:%20return%20false;" style="display: none;">
+                                <img src="/ui/assets/imgs/header/chs_checkoutDisabled_btn.gif" alt="CHECKOUT &gt;" border="0">
+                              </a>
+                            </div><!-- #pc-buttons -->
+                          </div><!-- #pc-summary -->
+                        </div><!-- #pc-summary-wrapper -->
+                        <div class="clear"></div>
+                      </div><!-- #pc-content -->
+                      <div id="pc-close-qualif"></div>
+                      <div class="clear"></div>
+                      <div id="pc-cond-msg">
+                        <a href="http://alpha.chicos.com/store/category/sales/catsales?Nvo=cat5089275&amp;icid=PCPR-newMarkdowns"><img src="/ui/assets/imgs/header/pcpr.jpg" alt="New Sale Markdowns Just taken." border="0"></a>
+                      </div>
+                    </div><!-- #pc-container -->
+                  </div><!-- #pc-container-shadow-body -->
+                  <div id="pc-container-shadow-bottom"></div>
+                </div><!-- #pc-shadow -->
+              </div><!-- #pc-wrapper -->
+            </div><!-- #pc-overflow -->
+            <script type="text/javascript">
+              var promoRemoveLinkTemplate = '';
+              s.brandName='chicos';
+            </script>
+            <a onclick="s_objectID='Shopping Bag'" href="#">
+              shopping bag&nbsp;<span id="bag-count"> (1 Item)</span>
+            </a>
+          </div><!-- #pc-main -->
+        </div><!-- #dynamic-form -->
+      </div><!-- #tertiary-nav -->
+    </div><!-- #desktop-header -->
+
+    <!--HEADER: Mobile Devices (including Tablet)-->
+    <div id="mobile-header" class="header-content visible-xs visible-sm">
+      <div id="header-brand-logo">
+        <a href="http://alpha.chicos.com/store" onclick="s_objectID='Chicos';">
+          <div class="brand-logo"></div>
+        </a>
+      </div>
+      <!-- begin global promo: mobile -->
+      <div class="header-global-promo visible-xs">
+        <!-- Dynamicall Load .moovweb_globalbanner -->
+      </div>
+      <!-- end global promo: mobile -->
+
+      <div id="top-nav-form-parent">
+        <div id="top-nav-form-wrapper">
+          <!-- begin top nav shop btn and navigation -->
+          <div class="top-nav-shop">
+            <button class="top-nav-shop-btn" role="button">
+              <span id="flag"></span>
+              <span id="shop-label">Shop</span>
+              <span id="arrow" class="fa fa-angle-up"></span>
+            </button>
+            <div class="top-nav-btn-list-tip fa fa-caret-up"></div>
+          </div><!-- .top-nav-shop -->
+          <!-- end top nav shop btn and navigation -->
+          <!-- begin search and cart info -->
+          <div class="form-group">
+            <button role="button" class="endeca-search-btn search visible-xs visible-sm">
+              <div class="icon-search"><i class="fa fa-fw fa-search"></i></div>
+              <div class="search_divider visible-xs"></div>
+            </button>
+            <a class="shop-cart-link" href="http://alpha.chicos.com/store/checkout/cart.jsp">
+              <div class="cart-count">1 items</div>
+              <div class="retina-icons-bag visible-sm"></div>
+            </a>
+            <div id="user-account-group">
+              <a class="personalize-msg" onclick="s_objectID='My Account';" href="https://alpha.chicos.com/store/account/login.jsp"><span>Sign In</span></a>
+              <div class="top-nav-account-btn-list-tip fa fa-caret-up"></div>
+            </div>
+          </div><!-- .form-group -->
+
+          <!-- end search and cart info -->
+          <!-- Tablet & Mobile (Only): Primary Nav -->
+          <div id="primary-nav-wrapper" class="top-nav-btn-list shadow" role="navigation">
+            <div id="mobile-country-reminder" class="visible-xs">
+              <div class="mobile-country-reminder-links">
+                <p class="country-shipping">
+                  <span class="country-pre-shipping">Shipping to </span>
+                  <span class="country-name">United States</span>
+                </p>
+                <a href="#" class="contextSelectorLink_bf">Change</a>
+              </div>
+            </div>
+            <div class="top-nav-btn-list-frame threeSided-border" role="menu">
+              <div class="primary-nav">
+                <ul class="menu">
+  <!-- DO NOT DELETE OR REMOVE: START-->
+  <!--======== TOP NAVIGATION CSS ========-->
+  
+  <!--======== HTTP to HTTPS SETTER ========-->
+  <script>
+    function setNonSecureUrls(link){
+      var linkVal = link.href; if(linkVal.indexOf("https://")>=0) {
+        linkVal = linkVal.replace("https://","http://");
+        link.href = "javascript:;"; document.location = linkVal;
+      }
+    }
+    function setNonSecureUrl(link){
+      var linkVal = link.href; if(linkVal.indexOf("https://")>=0) {
+        linkVal = linkVal.replace("https://","http://");
+        link.href = "javascript:;"; document.location = linkVal;
+      }
+    }
+  </script>
+  <!-- DO NOT DELETE OR REMOVE: END -->
+  <li id="menu_newarrivals">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/new-arrivals/cat40036" onclick="setNonSecureUrls(this);s_objectID='New Arrivals';">New Arrivals<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_petites">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/petites/cat9799294" onclick="setNonSecureUrls(this);s_objectID='Petites';">Petites<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_blacklabel">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/page.jsp?id=102210161" onclick="setNonSecureUrls(this);s_objectID='Black Label';">Black Label<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_travelers">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/travelers/cat40010" onclick="setNonSecureUrls(this);s_objectID='Travelers';">Travelers<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_zenergy">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/zenergy/cat2580017" onclick="setNonSecureUrls(this);s_objectID='Zenergy';">Active<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_jackets">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/jackets/cat40001" onclick="setNonSecureUrls(this);s_objectID='Jackets';">Jackets<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_tops">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/tops/cat40002" onclick="setNonSecureUrls(this);s_objectID='Tops';">Tops<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_bottoms">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/bottoms/cat8289646" onclick="setNonSecureUrls(this);s_objectID='Pants &amp; Denim';">Pants &amp; Denim<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_dresses">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/dresses-skirts/cat40004" onclick="setNonSecureUrls(this);s_objectID='Dresses &amp; Skirts';">Dresses &amp; Skirts<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_jewelry">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/jewelry/cat40005" onclick="setNonSecureUrls(this);s_objectID='Jewelry';">Jewelry<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_shoes">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/shoes-accessories/cat40006" onclick="setNonSecureUrls(this);s_objectID='Accessories';">Shoes &amp; Accessories<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_swim">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/page.jsp?id=96809530" onclick="setNonSecureUrls(this);s_objectID='Swim';">Swim<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_sale">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/sales/catsales" onclick="setNonSecureUrls(this);s_objectID='Sale';">Sale<span class="btn-arrow"></span></a>
+  </li>
+</ul>
+              </div><!-- .primary-nav -->
+            </div><!-- .top-nav-btn-list-frame -->
+            <div id="tablet-country-reminder" class="visible-sm">
+              <p class="country-shipping">
+                <span class="country-flag"><img src="/ui/assets/imgs/header/USA.jpg"></span>
+                <span class="country-pre-shipping">Shipping to </span>
+                <span class="country-name">United States</span>
+              </p>
+              <a href="#" class="contextSelectorLink_bf">Change</a>
+            </div><!-- #tablet-country-reminder -->
+          </div><!-- #primary-nav-wrapper -->
+        </div><!-- #top-nav-form-wrapper -->
+      </div><!-- #top-nav-form-parent -->
+    </div><!-- #mobile-header -->
+  </div>
+
+  <!-- begin global promo: tablet -->
+  <div class="header-global-promo visible-sm">
+    <!-- Dynamicall Load .mw_tablet_only  -->
+  </div>
+  <!-- end global promo: tablet -->
+
+  <div id="primary-nav" class="hidden-xs hidden-sm flex-desktop">
+    <ul id="menu">
+  <!-- DO NOT DELETE OR REMOVE: START-->
+  <!--======== TOP NAVIGATION CSS ========-->
+  
+  <!--======== HTTP to HTTPS SETTER ========-->
+  <script>
+    function setNonSecureUrls(link){
+      var linkVal = link.href;
+      if(linkVal.indexOf("https://")>=0) {
+        linkVal = linkVal.replace("https://","http://"); link.href = "javascript:;"; document.location = linkVal;
+      }
+    }
+    function setNonSecureUrl(link){
+      var linkVal = link.href;
+      if(linkVal.indexOf("https://")>=0) {
+        linkVal = linkVal.replace("https://","http://"); link.href = "javascript:;"; document.location = linkVal;
+      }
+    }
+  </script>
+  <!-- DO NOT DELETE OR REMOVE: END -->
+  <li id="menu_newarrivals">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/new-arrivals/cat40036" onclick="setNonSecureUrls(this);s_objectID='New Arrivals';">New Arrivals<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_petites">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/petites/cat9799294" onclick="setNonSecureUrls(this);s_objectID='Petites';">Petites<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_blacklabel">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/page.jsp?id=102210161" onclick="setNonSecureUrls(this);s_objectID='Black Label';">Black Label<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_travelers">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/travelers/cat40010" onclick="setNonSecureUrls(this);s_objectID='Travelers';">Travelers<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_zenergy">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/zenergy/cat2580017" onclick="setNonSecureUrls(this);s_objectID='Zenergy';">Active<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_jackets">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/jackets/cat40001" onclick="setNonSecureUrls(this);s_objectID='Jackets';">Jackets<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_tops">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/tops/cat40002" onclick="setNonSecureUrls(this);s_objectID='Tops';">Tops<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_bottoms">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/bottoms/cat8289646" onclick="setNonSecureUrls(this);s_objectID='Pants &amp; Denim';">Pants &amp; Denim<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_dresses">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/dresses-skirts/cat40004" onclick="setNonSecureUrls(this);s_objectID='Dresses &amp; Skirts';">Dresses &amp; Skirts<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_jewelry">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/jewelry/cat40005" onclick="setNonSecureUrls(this);s_objectID='Jewelry';">Jewelry<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_shoes">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/shoes-accessories/cat40006" onclick="setNonSecureUrls(this);s_objectID='Accessories';">Shoes &amp; Accessories<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_swim">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/page.jsp?id=96809530" onclick="setNonSecureUrls(this);s_objectID='Swim';">Swim<span class="btn-arrow"></span></a>
+  </li>
+  <li id="menu_sale">
+    <a class="nav-btn" href="http://alpha.chicos.com/store/category/sales/catsales" onclick="setNonSecureUrls(this);s_objectID='Sale';">Sale<span class="btn-arrow"></span></a>
+  </li>
+</ul>
+  </div>
+  <script>
+    function setNonSecureUrl(link){
+      var linkVal = link.href;
+      if(linkVal.indexOf("https://")>=0) {
+        linkVal = linkVal.replace("https://","http://");
+        link.href = "javascript:;";
+        document.location = linkVal;
+      }
+    }
+  </script>
+
+  <div class="clear"></div>
+  <div style="display: none; height: 0px;" id="exit_msg">
+    <a href="http://www.soma.com/store/home.jsp?ICID=Soma_Link" target="_blank" onclick="s_objectID='Soma Intimates';">
+      <img src="/ui/assets/imgs/header/msg_exit_chicos.gif" alt="Shop Soma Intimates" border="0" height="160" width="300">
+    </a>
+  </div>
+</div><!-- #header-parent -->
+
+
+<form id="endeca-search-form">
+  <div id="endeca-search-bar">
+    <div id="endeca-search-bar-frame-wrapper">
+      <div id="endeca-search-bar-frame">
+        <span class="endeca-typeahead" style="position: relative; display: inline-block; direction: ltr;">
+          <input class="typeahead tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" style="position: absolute; width: 98%; border-color: transparent; box-shadow: none; opacity: 1; font-style: italic; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);">
+          <div class="typeahead-wrapper">
+            <input class="typeahead tt-input" type="text" placeholder="What can we help you find?" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; font-style: italic; background-color: transparent;">
+          </div>
+          <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-style: italic; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+          <span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;">
+            <div class="tt-dataset-Search"></div>
+          </span>
+        </span>
+        <div class="endeca-search-submit">
+          <button onclick="return false;" type="submit" border="0" id="endeca-submit" alt="search" class="icons-search-large" value="">
+            <i class="fa fa-fw fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div type="button" class="icons-close">
+      <i class="fa fa-fw fa-times"></i>
+    </div>
+  </div>
+</form>
+  
+    <div id="content-wrap">
+      <div id="content">
+        <div class="container-fluid">
+
+<div id="content-pad">
+  <div class="row">
+    <div class="col-md-2 col-sm-4 hidden-xs">
+      <nav class="nav-secondary">
+  <h4>Customer Care</h4>
+  <ul>
+    <li class=""><a href="contact-us.html">Contact Us</a></li>
+    <li class=""><a href="faq.html">FAQ's</a></li>
+    <li class=""><a href="size-charts.html">Size Charts</a></li>
+    <li class=""><a href="shipping-handling.html">Shipping &amp; Handling</a></li>
+    <li class=""><a href="returns.html">Returns</a></li>
+    <li class=""><a href="sales-tax.html">Sales Tax</a></li>
+    <li><a href="">Investor Relations</a></li>
+    <li><a href="">Careers</a></li>
+    <li class=""><a href="about-us.html">About Us</a></li>
+    <li class=""><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li class=""><a href="terms.html">Terms of Use</a></li>
+    <li class=""><a href="coupons.html">Coupons &amp; Promotions</a></li>
+    <li><a href="">Order &amp; Account Information</a></li>
+    <li class=" active "><a href="giving.html">Charitable Giving</a></li>
+  </ul>
+</nav>
+    </div>
+    <div class="col-md-10 col-sm-8">
+      <h1>Chico's Charitable Giving Philosophy/Process</h1>
+      <div class="row">
+        <div class="col-sm-8">
+          <main role="main">
+            <article id="page-customer-care">
+              <p>The Chico's family was built on kind spirits, customer care, and community support. We understand that our communities have made Chico's successful and we are privileged to give back to both our associates and our communities. We support our communities in various ways with a predominant focus on women, children, health, education, and the environment.</p>
+<h2>Giving Guidelines</h2>
+<p>Chico's FAS, Inc. ("Chico's") receives thousands of requests for donations annually. In order to ensure that our donations are consistent with our mission and that all requests are given a fair review, Chico's has developed the following Giving Guidelines.</p>
+<h2>Philanthropic Focus</h2>
+<p>Our donations will be limited to organizations whose major purpose is serving women and children and our community. Within these broad categories, Chico's will focus its charitable giving on organizations offering the following programs.</p>
+<h3>Women and Children</h3>
+<ul>
+  <li>Improving healthcare for women and children</li>
+  <li>Promoting the empowerment of women</li>
+  <li>Stopping violence against women and children</li>
+  <li>Improving K-12 classroom programs and learning tools</li>
+  <li>Supporting early education and reading programs</li>
+  <li>Promoting community involvement in public school systems</li>
+</ul>
+<h3>Community</h3>
+<ul>
+  <li>Supporting neighborhood programs that are aligned with these Guidelines</li>
+  <li>Supporting the arts</li>
+  <li>Festivals and events that enhance the community through promoting women and children</li>
+  <li>Preserving green space</li>
+</ul>
+<h2>Types of Available Funding</h2>
+<p>Chico's will generally limit its contributions to:</p>
+<ul>
+  <li>General operating support for programs that help approved organizations with fundraising events and/or donating equipment or supplies.</li>
+  <li>Sponsor or purchase tables at events benefiting public 501(c)(3) organizations that serve areas where we have a strong community presence, associates volunteering for the event, or in our headquarters community.</li>
+  <li>Very specific Capital Campaigns for construction or renovation of facilities that are vital to the advancement of agencies' success in our communities.</li>
+</ul>
+<p>Chico's will not support organizations that discriminate against anyone based on gender, political groups, religious beliefs, sexual orientation, or ethnicity. In addition, Chico's will not make contributions to:</p>
+<ul>
+  <li>Conferences, athletic teams, individual clubs, troops, or school classrooms</li>
+  <li>Individuals, including scholarships or travel-related expenses paid to individual political, sectarian, fraternal, or religious organizations</li>
+  <li>Political parties or other political groups</li>
+</ul>
+<h2>How to apply for funding</h2>
+<p>Proposals / Request must include the following information:</p>
+<ul>
+  <li>A brief one to two-page description of your funding request and the requested amount. Included should be your organization's history and mission statement.</li>
+  <li>A copy of your organization's IRS 501(c)(3) letter.</li>
+  <li>A current annual operating budget with income and expenses.</li>
+  <li>A project or program budget detailing expenses and anticipated income sources, if you are requesting support for a specific project.</li>
+  <li>Information on opportunities for our associates to volunteer or partner with your organization.</li>
+</ul>
+<p>To request funding, please send a written proposal. Please do not send video, CD, DVD or fax.</p>
+<address>
+  Chico's FAS, Inc.<br>
+  11215 Metro Parkway<br>
+  Ft. Myers, Florida 33966<br>
+  ATTN: Charitable Giving
+</address>
+<div class="alert alert-info">
+  All requests will be reviewed quarterly (January, April, July, October). Due to the large number of requests received, we will are unable to respond to requests that are declined.<br>
+  <strong>Note:</strong> Incomplete applications will not be accepted.
+</div>
+<h2>Grant Renewal</h2>
+<p>A report on the previous grant(s) awarded should be submitted with your renewal request. All of the above information should be included with your proposal.</p>
+            </article>
+          </main>
+        </div>
+        <div class="col-sm-4">
+          <div class="chat-wrap">
+  <div class="chat">
+    <h4 class="chat-heading">Chat Live
+      <small>With a Chico's Stylist</small>
+    </h4>
+    <p><i class="fa fa-comments"></i></p>
+    <a class="btn btn-primary btn-sm btn-block" href="">
+      Start Chat
+    </a>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div><!-- .container-fluid -->
+    </div><!-- #content -->
+  </div><!-- #content-wrap -->
+
+  <div id="footer-parent" class="col-xs-12" role="contentinfo">
+  <link rel="stylesheet" href="chs-aboutUs_files/footer.css">
+  <div id="desktop-footer-container" class="hidden-xs hidden-sm visible-md visible-lg">
+    <div id="chs-footer-parent">
+      <div id="chs-footer-main">
+        <div id="chs-footer-liveHelp">
+          <a href="javascript:webInContactChatPop();">
+            <img src="http://www.chicos.com/web_assets/skins/live_help_up.gif" alt="Live Help" height="123" width="167">
+          </a>
+        </div><!-- #chs-footer-liveHelp -->
+        <div id="chs-footer-social">
+          <div id="social-header">Connect With Us</div>
+          <ul id="ul-social-left">
+            <li id="email-link">
+              <a href="http://alpha.chicos.com/store/page.jsp?id=97&amp;ICID=footer_emailSignup" onclick="setNonSecureUrls(this);s_objectID='sign up for e-mail';">sign up for e-mail</a>
+            </li>
+            <li id="youtube-link"><a href="http://www.youtube.com/lovechicos" target="_blank">youtube</a></li>
+            <li id="facebook-link"><a href="http://www.facebook.com/LoveChicos" target="_blank">Facebook</a></li>
+            <li id="googleplus-link"><a href="http://plus.google.com/+chicos/posts" target="_blank">google+</a></li>
+          </ul>
+          <ul id="ul-social-right"><li id="twitter-link"><a href="http://twitter.com/chicos" target="_blank">twitter</a></li>
+            <li id="pinterest-link"><a href="http://pinterest.com/lovechicos/" target="_blank">pinterest</a></li>
+            <li id="instagram-link"><a href="http://instagram.com/lovechicos" target="_blank">Instagram</a></li>
+          </ul>
+        </div><!-- #chs-footer-social -->
+        <div id="chs-footer-shop">
+          <div id="shop-header">More ways to shop</div>
+          <ul id="ul-shop-left">
+            <li><a href="http://alpha.chicos.com/store/store_locator.jsp" onclick="setNonSecureUrls(this);s_objectID='find a boutique';">find a boutique</a></li>
+            <li><a href="http://alpha.chicos.com/store/browse/catalog.jsp" onclick="setNonSecureUrls(this);s_objectID='online catalog';">online catalog</a></li>
+            <li><a href="http://alpha.chicos.com/store/account/registration.jsp" onclick="setNonSecureUrls(this);s_objectID='request a catalog';">request a catalog</a></li>
+            <li>
+              <div id="info-phone-shop">888.855.4986</div>
+            </li>
+          </ul>
+          <ul id="ul-shop-right">
+            <li><a href="http://alpha.chicos.com/store/browse/giftCards.jsp?cat=New+Arrivals&amp;catId=cat40036" onclick="setNonSecureUrls(this);s_objectID='gift cards';">gift cards</a></li>
+            <li><a href="http://alpha.chicos.com/store/account/passport.jsp" onclick="setNonSecureUrls(this);s_objectID='passport program';">passport program</a></li>
+            <li><a href="http://alpha.chicos.com/store/page.jsp?id=102209334" onclick="setNonSecureUrls(this);s_objectID='style by appointment';">style by appointment</a></li>
+          </ul>
+          </div><!-- #chs-footer-shop-->
+          <div id="chs-footer-info">
+            <div id="info-header">Information</div>
+            <ul id="info-left">
+              <li><a href="http://alpha.chicos.com/store/page.jsp?id=39" onclick="setNonSecureUrls(this);s_objectID='order status';">our story</a></li>
+              <li><a href="http://alpha.chicos.com/store/page.jsp?id=45" onclick="setNonSecureUrls(this);s_objectID='our sizes';">sizes chart</a></li>
+              <li><a href="http://alpha.chicos.com/store/page.jsp?id=36" onclick="setNonSecureUrls(this);s_objectID='return policy';">return policy</a></li>
+              <li><a href="http://alpha.chicos.com/store/page.jsp?id=34" onclick="setNonSecureUrls(this);s_objectID='shipping';">shipping</a></li>
+            </ul>
+            <ul id="info-mid">
+              <li><a href="http://alpha.chicos.com/store/page.jsp?id=37" onclick="setNonSecureUrls(this);s_objectID='contact us';">contact us</a></li>
+              <li><a href="http://jobs.chicos.com/careers/chico%27s-jobs" onclick="setNonSecureUrls(this);s_objectID='career opportunities';" target="_blank">career opportunities</a></li>
+              <li><a href="http://alpha.chicos.com/store/page.jsp?id=33" onclick="setNonSecureUrls(this);s_objectID='privacy &amp; security';">privacy &amp; security</a></li>
+              <li><a href="http://alpha.chicos.com/store/checkout/orderstatuscheck.jsp?entity=01" onclick="setNonSecureUrls(this);s_objectID='order status';">Order Status</a></li>
+            </ul>
+            <ul id="info-right">
+              <li id="info-phone"><a href="http://alpha.chicos.com/store/browse/shelf.jsp?cat=Children%27s+Miracle+Network&amp;catId=cat7339287">charity</a></li>
+              <li><a href="http://alpha.chicos.com/store/page.jsp?id=30" onclick="setNonSecureUrls(this);s_objectID='terms of use';">terms of use</a></li>
+              <li><a href="http://www.chicosfas.com/" target="_blank">investor relations</a></li>
+              <li><a href="http://alpha.chicos.com/store/sitemap.jsp" onclick="setNonSecureUrls(this);s_objectID='Site Map';">site map</a></li>
+            </ul>
+          </div><!-- #chs-footer-info -->
+        </div><!-- #chs-footer-main -->
+      </div>
+    </div>
+  <div id="tablet-footer-container" class="hidden-xs hidden-lg visible-sm">
+    <div id="tablet-footer-parent" class="row" role="menu">
+      <div id="footer-main">
+        <!-- Begin "Connect With Us" section -->
+        <div id="footer-social-section">
+          <h6 role="heading">Connect With Us</h6>
+          <ul>
+            <li class="email-link">
+              <a href="http://alpha.chicos.com/store/page.jsp?id=97&amp;ICID=footer_emailSignup" onclick="setNonSecureUrls(this);s_objectID='sign up for e-mail';" role="link">
+                <span class="retina-footer-icons-email"></span><span class="sm-link-text">sign up for e-mail</span>
+              </a>
+            </li>
+            <li class="youtube-link">
+              <a href="http://www.youtube.com/lovechicos" target="_blank" role="link">
+                <span class="retina-footer-icons-youtube"></span><span class="sm-link-text">youtube</span>
+              </a>
+            </li>
+            <li class="facebook-link">
+              <a href="http://www.facebook.com/LoveChicos" target="_blank" role="link">
+                <span class="retina-footer-icons-facebook"></span>
+                <span class="sm-link-text">Facebook</span>
+              </a>
+            </li>
+            <li class="twitter-link">
+              <a href="http://twitter.com/chicos" target="_blank" role="link">
+                <span class="retina-footer-icons-twitter"></span>
+                <span class="sm-link-text">twitter</span>
+              </a>
+            </li>
+            <li class="pinterest-link">
+              <a href="http://pinterest.com/lovechicos/" target="_blank" role="link">
+                <span class="retina-footer-icons-pinterest"></span>
+                <span class="sm-link-text">pinterest</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- End "Connect With Us" section -->
+
+        <!-- Begin "More Ways To Shop" section -->
+        <div id="footer-shop-section">
+          <h6 role="heading">More ways to shop</h6>
+          <ul>
+            <li><a href="http://alpha.chicos.com/store/store_locator.jsp" onclick="setNonSecureUrls(this);s_objectID='find a boutique';" role="link">find a boutique</a></li>
+            <li><a href="http://alpha.chicos.com/store/browse/catalog.jsp" onclick="setNonSecureUrls(this);s_objectID='online catalog';" role="link">online catalog</a></li>
+            <li><a href="http://alpha.chicos.com/store/account/registration.jsp" onclick="setNonSecureUrls(this);s_objectID='request a catalog';" role="link">request a catalog</a></li>
+            <li><a href="http://alpha.chicos.com/store/browse/giftCards.jsp?cat=New+Arrivals&amp;catId=cat40036" onclick="setNonSecureUrls(this);s_objectID='gift cards';" role="link">gift cards</a></li>
+            <li><a href="http://alpha.chicos.com/store/account/passport.jsp" onclick="setNonSecureUrls(this);s_objectID='passport program';" role="link">passport program</a></li>
+            <li><a href="http://alpha.chicos.com/store/page.jsp?id=102209334" onclick="setNonSecureUrls(this);s_objectID='style by appointment';" role="link">style by appointment</a></li>
+            <li><a href="tel:+18888554986" role="link">888.855.4986</a></li>
+          </ul>
+        </div><!-- #footer-shop-section -->
+        <!-- End "More Ways To Shop" section -->
+
+        <!-- Begin "Connect With Us" section -->
+        <div id="footer-info-section">
+          <h6 role="heading">Information</h6>
+          <ul id="info-left">
+            <li><a href="http://alpha.chicos.com/store/page.jsp?id=39" onclick="setNonSecureUrls(this);s_objectID='order status';" role="link">our story</a></li>
+            <li><a href="http://alpha.chicos.com/store/page.jsp?id=45" onclick="setNonSecureUrls(this);s_objectID='our sizes';" role="link">sizes chart</a></li>
+            <li><a href="http://alpha.chicos.com/store/page.jsp?id=36" onclick="setNonSecureUrls(this);s_objectID='return policy';" role="link">return policy</a></li>
+            <li><a href="http://alpha.chicos.com/store/page.jsp?id=34" onclick="setNonSecureUrls(this);s_objectID='shipping';" role="link">shipping</a></li>
+            <li><a href="http://alpha.chicos.com/store/page.jsp?id=37" onclick="setNonSecureUrls(this);s_objectID='contact us';" role="link">contact us</a></li>
+            <li><a href="http://jobs.chicos.com/careers/chico%27s-jobs" onclick="setNonSecureUrls(this);s_objectID='career opportunities';" target="_blank" role="link">career opportunities</a></li>
+          </ul>
+          <ul id="info-right">
+            <li><a href="http://alpha.chicos.com/store/page.jsp?id=33" onclick="setNonSecureUrls(this);s_objectID='privacy &amp; security';" role="link">privacy &amp; security</a></li>
+            <li><a href="http://alpha.chicos.com/store/checkout/orderstatuscheck.jsp?entity=01" onclick="setNonSecureUrls(this);s_objectID='order status';" role="link">Order Status</a></li>
+            <li><a href="http://alpha.chicos.com/store/browse/shelf.jsp?cat=Children%27s+Miracle+Network&amp;catId=cat7339287" role="link">charity</a></li>
+            <li><a href="http://alpha.chicos.com/store/page.jsp?id=30" onclick="setNonSecureUrls(this);s_objectID='terms of use';" role="link">terms of use</a></li>
+            <li><a href="http://www.chicosfas.com/" target="_blank" role="link">investor relations</a></li>
+            <li><a href="http://alpha.chicos.com/store/sitemap.jsp" onclick="setNonSecureUrls(this);s_objectID='Site Map';" role="link">site map</a></li>
+          </ul>
+        </div><!-- #footer-info-section -->
+        <!-- End "Connect With Us" section -->
+
+      </div>
+    </div>
+  </div>
+
+  <div id="mobile-footer-container" class="hidden-md hidden-lg visible-xs">
+    <div id="mobile-footer-parent" class="" role="menu">
+      <div class="footer-contact">
+        <div class="footer-headline">Have a question or can't find something? </div>
+        <a class="info-contact-phone" href="tel:888.855.4986">888.855.4986</a>
+        <a class="info-contact-email" href="mailto:customerservice@chicos.com">Email Help</a>
+      </div>
+      <div id="mobile-footer-nav-group" class="">
+        <a href="javascript:void(0)" class="nav-btn" role="menuitem">Store Locator<span class="btn-arrow"></span></a>
+        <a href="javascript:void(0)" class="nav-btn" role="menuitem">Gift Cards<span class="btn-arrow"></span></a>
+        <a href="javascript:void(0)" class="nav-btn mobile-more-btn" role="menuitem">More<i class="fa fa-plus-square-o"></i></a>
+        <!--<i class="fa fa-minus-square-o"></i>-->
+      </div>
+      <div id="mobile-info-group" class="">
+        <ul id="mobile-info-left" class="col-xs-6">
+          <li><a target="_blank" onclick="setNonSecureUrls(this);s_objectID='sign up for e-mail';" href="http://ebm.cheetahmail.com/r/regf2?a=0&amp;aid=2078541674&amp;n=501">sign up for e-mail</a></li>
+          <li><a onclick="setNonSecureUrls(this);s_objectID='request a catalog';" href="http://alpha.chicos.com/store/account/registration.jsp">request a catalog</a></li>
+          <li><a href="http://alpha.chicos.com/store/page.jsp?id=102209334">Style by Appointment</a></li>
+          <li><a onclick="setNonSecureUrls(this);s_objectID='our sizes';" href="http://alpha.chicos.com/store/page.jsp?id=45">sizes chart</a></li>
+          <li><a onclick="setNonSecureUrls(this);s_objectID='shipping';" href="http://alpha.chicos.com/store/page.jsp?id=34">shipping</a></li>
+          <li><a onclick="setNonSecureUrls(this);s_objectID='return policy';" href="http://alpha.chicos.com/store/page.jsp?id=36">return policy</a></li>
+          <li><a onclick="setNonSecureUrls(this);s_objectID='contact us';" href="http://alpha.chicos.com/store/page.jsp?id=37">contact us</a></li>
+          <li><a onclick="setNonSecureUrls(this);s_objectID='order status';" href="http://alpha.chicos.com/store/checkout/orderstatuscheck.jsp?entity=01">Order Status</a></li>
+        </ul>
+        <ul id="mobile-info-right" class="col-xs-6">
+          <li><a onclick="setNonSecureUrls(this);s_objectID='order status';" href="http://alpha.chicos.com/store/page.jsp?id=39">our story</a></li>
+          <li><a target="_blank" href="http://alpha.chicos.com/store/browse/shelf.jsp?cat=Children%27s+Miracle+Network&amp;catId=cat7339287">charity</a></li>
+          <li><a onclick="setNonSecureUrls(this);s_objectID='terms of use';" href="http://alpha.chicos.com/store/page.jsp?id=30">terms of use</a></li>
+          <li><a onclick="setNonSecureUrls(this);s_objectID='privacy &amp; security';" href="http://alpha.chicos.com/store/page.jsp?id=33">privacy &amp; security</a></li>
+          <li><a target="_blank" href="http://www.chicosfas.com/Mobile.view?c=72638&amp;d=0&amp;v=0">investor relations</a></li>
+          <li><a onclick="setNonSecureUrls(this);s_objectID='Site Map';" href="http://alpha.chicos.com/store/sitemap.jsp">site map</a></li>
+          <li><a target="_blank" onclick="setNonSecureUrls(this);s_objectID='career opportunities';" href="http://jobs.chicos.com/careers/chico%27s-jobs">career opportunities</a></li>
+        </ul>
+      </div><!-- #mobile-info-group -->
+      <div id="mobile-social">
+        <div id="mobile-social-group">
+          <ul id="ul-social-left" class="col-xs-6">
+            <li class="facebook-link"><a target="_blank" href="http://www.facebook.com/LoveChicos">Facebook</a></li>
+            <li class="instagram-link"><a target="_blank" href="http://instagram.com/lovechicos">Instagram</a></li>
+            <li class="pinterest-link"><a target="_blank" href="http://pinterest.com/lovechicos/">pinterest</a></li>
+            <li class="googleplus-link"><a target="_blank" href="http://plus.google.com/+chicos/posts">google+</a></li>
+          </ul>
+          <ul id="ul-social-right" class="col-xs-6">
+            <li class="twitter-link"><a target="_blank" href="http://twitter.com/chicos">twitter</a></li>
+            <li class="youtube-link"><a target="_blank" href="http://www.youtube.com/lovechicos">youtube</a></li>
+          </ul>
+        </div><!-- #mobile-social-group -->
+      </div><!-- #mobile-social -->
+    </div>
+  </div>
+  <!--
+  <div id="copyright" class="minor">
+    <p>
+      Chico's and Chico's Passport are registered trademarks of Chico's Brands Investments, Inc.<br>
+      &copy; 2015 Chico's Distribution Services, LLC. All Rights Reserved.
+    </p>
+  </div>
+  -->
+  <link href="chs-aboutUs_files/chicos.htm" rel="stylesheet">
+  <script>'use strict'; $(function(){ var FAS = window.FAS || {}; FAS.Footer = {}; FAS.Footer.init = function(){ var self = this; self.expandedSections = {}; $('[data-footer-expand]').click(function(){ var elementToExpand = $(this).attr('data-footer-expand'); var icon = $(this).find('i.fa'); if (!self.expandedSections[elementToExpand]) { $(this).addClass('expanded'); $(elementToExpand).show(); self.expandedSections[elementToExpand] = true; icon.removeClass('fa-plus-square-o').addClass('fa-minus-square-o'); $(this).find('span').text('Less'); } else { $(this).removeClass('expanded'); $(elementToExpand).hide(); self.expandedSections[elementToExpand] = false; icon.addClass('fa-plus-square-o').removeClass('fa-minus-square-o'); $(this).find('span').text('More'); } return false; }); }; FAS.Footer.init(); window.FAS = FAS; }); $(function(){ if($('[data-responsive]').length > 0){ if (window.location.hash.search('responsive') < 0) { window.location.hash = window.location.hash + '/responsive' } } }) </script>
+  <script type="text/javascript" src="chs-aboutUs_files/mobile.js"></script>
+  <div id="copyright">
+    Chico's and Chico's Passport are registered trademarks of Chico's Brands Investments, Inc.<br/>
+    &copy; 2015 Chico's Distribution Services, LLC. All Rights Reserved.
+  </div>
+</div><!-- #footer-parent -->
+
+</div><!-- #page-wrap -->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+
+<script src="/ui/assets/js/jquery.zoom.min.js"></script>
+
+
+<script src="/ui/assets/js/select/bootstrap-select.min.js"></script>
+
+<script src="/ui/assets/js/site.js"></script>
+<script src="/ui/assets/js/prototyping/style-switcher.js"></script>
+
+
+<script>
+  $('.selectpicker').selectpicker();
+</script>
+
+
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover();
+  })
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+
+<script>
+  $('.modal .product-img-wrap').zoom({url: 'http://www.chicos.com/Product_Images/570136590_1440_large.jpg'});
+</script>
+
+
+</body>
+</html>

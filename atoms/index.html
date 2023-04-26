@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- this file's contents served to template files as well as the living style guide -->
+
+<title>
+  
+  Atoms &middot; Bootstrap
+  
+</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css"> form.asyncForm { display: none; } </style><!-- ? -->
+
+<link data-css="brand-css" rel="stylesheet" href="/ui/assets/css/chicos.css">
+
+
+
+<script src="//use.typekit.net/ytj7xwo.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+<style>
+  body.page-guide {
+  padding-top: 100px;
+  background: #fff;
+}
+body.page-raw {
+  padding-top: 50px;
+}
+
+.navbar-default {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-default .btn-default {
+  background: #444;
+  /*border-radius: 50%;*/
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand {
+  text-decoration: none;
+  color: #999;
+  /*font-weight: bold;*/
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand:hover {
+  text-decoration: none;
+  color: #fff;
+  border-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #333;
+  border-color: transparent;
+  outline: none;
+}
+
+.navbar-default .btn {
+  border-radius: 0;
+  padding: 6px 8px !important;
+}
+.navbar-right .btn-default,
+.navbar-right .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open > .dropdown-toggle.btn-default {
+  border-color: transparent;
+  font-weight: normal;
+}
+.navbar-right .navbar-nav>.active>a,
+.navbar-right .navbar-nav>.active>a:focus,
+.navbar-right .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #900 !important;
+  /*font-weight: bold;*/
+}
+
+.bucket-heading {
+  font-size: 36px;
+  /*line-height: 24px;*/
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+  color: #999;
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+.breadcrumbs {
+  margin-bottom: 20px;
+}
+.standards-nav {
+  position:fixed;
+}
+.example-wrap {
+  margin: 50px 0;
+  /*padding-top: 20px;*/
+/*  border-top: 1px solid #555;*/
+}
+.example-wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.example-wrap header {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.example-wrap header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.example-wrap header h2 {
+  float: left;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: normal;
+  margin: 0 0 0 0;
+  text-transform: uppercase;
+  color: #999;
+  padding-top: 80px;
+  margin-top: -80px;
+}
+.example-wrap header p {
+  float: right;
+  text-align: right;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.example-wrap header p a {
+  text-decoration: none;
+  color: #111;  
+  margin-left: 10px;
+}
+.example-wrap header p a:hover {
+  text-decoration: none;
+  color: #999;  
+}
+.example {
+  clear: both;
+  /*padding: 20px;*/
+  /*border: 1px solid #ddd;*/
+}
+.example-code {
+  display: none;
+  /*margin: 20px -20px -20px -20px;*/
+  border-top: 1px solid #ddd;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  max-height: 300px;
+  overflow: auto;
+}
+.highlight {
+}
+.highlight pre {
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  word-break: normal;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+
+#nav {
+  position: fixed;
+  top: 100px;
+  margin-left: 20px;
+}
+.scrollspy .nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.scrollspy .nav li {
+  font-size: 12px;
+  line-height: 1.1;
+}
+.scrollspy .nav > li > a {
+  padding: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.scrollspy .nav .nav {
+  display: none;
+  padding-left: 20px;
+}
+.scrollspy .nav .nav li {
+  font-size: 12px; line-height: 1.1;
+}
+.scrollspy .nav .nav > li > a {
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: normal;
+}
+.scrollspy .nav .nav > li.active > a {
+  font-weight: bold;
+  color: #900;
+}
+.scrollspy .nav .active .nav {
+  display: block;
+}
+
+.update {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 4px 8px;
+  font-size: 12px;
+  background-color: #eee;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.list-templates {
+  margin: 20px 0 20px 0;
+  font-size: 14px;
+  line-height: 2em;
+}
+.list-templates a {
+  text-decoration: none;
+}
+.list-templates a:hover {
+  text-decoration: underline;
+}
+/*
+ul li h2 {
+  margin-top: 20px;
+}*/
+</style>
+
+</head>
+
+<body class="page-guide" data-spy="scroll" data-target=".scrollspy">
+  
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/ui/">Chico's FAS</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+        
+        <li class="active"><a href="/ui/atoms/">Atoms <span class="sr-only">(current)</span></a></li>
+        
+
+        
+        <li><a href="/ui/molecules/">Molecules</a></li>
+        
+
+        
+        <li><a href="/ui/pages/">Pages</a></li>
+        
+
+        <!--
+        <li><a href="/ui/prototypes/">Prototypes</a></li>
+        -->
+
+        <!-- 
+        <li><a href="/ui/docs/">Development Guide</a></li>
+         -->
+
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right nav-pills">
+        <li class="active"><a href="#" rel="/ui/assets/css/chicos.css">C</a></li>
+        <li><a href="#" rel="/ui/assets/css/soma.css">S</a></li>
+        <li><a href="#" rel="/ui/assets/css/whbm.css">W</a></li>
+        <li><a href="#" rel="/ui/assets/css/boston.css">B</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+  <div class="row">
+    <Div class="col-md-9">
+  <p class="update">Last updated: April 30, 2015</p>
+
+  <h1 class="bucket-heading" id="text">Text</h1>
+  <section class="example-wrap">
+  <header>
+    <h2 id="text-fonts">Fonts</h2>
+    <p><a href="text/fonts.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <p>Primary font: "Arial", sans-serif;</p>
+<p><strong>Primary bold font: "Arial", sans-serif;</strong></p>
+<p><em>Primary italic font: "Arial", sans-serif;</em></p>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>Primary font: "Arial", sans-serif;<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;strong&gt;</span>Primary bold font: "Arial", sans-serif;<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;em&gt;</span>Primary italic font: "Arial", sans-serif;<span class="nt">&lt;/em&gt;&lt;/p&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-headings">Headings</h2>
+    <p><a href="text/headings.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>h2. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>h3. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>h4. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>h5. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>h6. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h6&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-body">Body</h2>
+    <p><a href="text/body.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Maecenas sed diam eget risus varius blandit sit amet non magna.<span class="nt">&lt;/p&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-style">Styles</h2>
+    <p><a href="text/style.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <p>The following is <strong>bold text.</strong></p>
+<p>The following is <em>italicized text.</em></p>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>The following is <span class="nt">&lt;strong&gt;</span>bold text.<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>The following is <span class="nt">&lt;em&gt;</span>italicized text.<span class="nt">&lt;/em&gt;&lt;/p&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-lead">Lead Copy</h2>
+    <p><a href="text/lead.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt enim, iste doloremque atque ex quod reiciendis eaque asperiores repellendus minima corrupti sed cupiditate nobis, non laboriosam aliquid quos deserunt sequi!</p>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt enim, iste doloremque atque ex quod reiciendis eaque asperiores repellendus minima corrupti sed cupiditate nobis, non laboriosam aliquid quos deserunt sequi!<span class="nt">&lt;/p&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-small">Small Copy</h2>
+    <p><a href="text/small.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <h1>Headline <small>Additional info</small></h1>
+<p class="small">Need it fast? Send it in an <a href="#">E-Gift Card</a>.</p>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>Headline <span class="nt">&lt;small&gt;</span>Additional info<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small"</span><span class="nt">&gt;</span>Need it fast? Send it in an <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>E-Gift Card<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-alignment">Alignment</h2>
+    <p><a href="text/alignment.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <p class="text-left">Left aligned text.</p>
+<p class="text-center">Center aligned text.</p>
+<p class="text-right">Right aligned text.</p>
+<p class="text-right-lg">Right aligned text on larger screens.</p>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-left"</span><span class="nt">&gt;</span>Left aligned text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>Center aligned text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>Right aligned text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-right-lg"</span><span class="nt">&gt;</span>Right aligned text on larger screens.<span class="nt">&lt;/p&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-transform">Transformation</h2>
+    <p><a href="text/transform.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <p class="text-lowercase">Lowercased text.</p>
+<p class="text-uppercase">Uppercased text.</p>
+<p class="text-capitalize">Capitalized text.</p>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-lowercase"</span><span class="nt">&gt;</span>Lowercased text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-uppercase"</span><span class="nt">&gt;</span>Uppercased text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-capitalize"</span><span class="nt">&gt;</span>Capitalized text.<span class="nt">&lt;/p&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-address">Address</h2>
+    <p><a href="text/address.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <address>
+  <strong>Stonebriar Centre</strong><br>
+  2601 Preston Road<br>
+  Suite 1082<br>
+  Frisco, TX  75034<br>
+  469-633-1080
+</address>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;address&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Stonebriar Centre<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
+  2601 Preston Road<span class="nt">&lt;br&gt;</span>
+  Suite 1082<span class="nt">&lt;br&gt;</span>
+  Frisco, TX  75034<span class="nt">&lt;br&gt;</span>
+  469-633-1080
+<span class="nt">&lt;/address&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-alerts">Alerts</h2>
+    <p><a href="text/alerts.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="alert alert-success" role="alert">
+  I am a generic action success message.
+</div>
+<div class="alert alert-info" role="alert">
+  <strong>Please note:</strong> We can not guarantee store inventory availability. Inventory can change quickly throughout the day. Call store prior to arriving to confirm availability. Our locate in store feature only displays items that are not on sale.
+</div>
+<div class="alert alert-warning" role="alert">
+  This item is sold out in that size.
+</div>
+<div class="alert alert-danger" role="alert">
+  We do not see any completed orders for your account at this time. Please call customer service at 1.888.855.4986 to learn more details.
+</div>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  I am a generic action success message.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Please note:<span class="nt">&lt;/strong&gt;</span> We can not guarantee store inventory availability. Inventory can change quickly throughout the day. Call store prior to arriving to confirm availability. Our locate in store feature only displays items that are not on sale.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  This item is sold out in that size.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  We do not see any completed orders for your account at this time. Please call customer service at 1.888.855.4986 to learn more details.
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-well">Well</h2>
+    <p><a href="text/well.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="well">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt enim, iste doloremque atque ex quod reiciendis eaque asperiores repellendus minima corrupti sed cupiditate nobis, non laboriosam aliquid quos deserunt sequi!
+</div>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"well"</span><span class="nt">&gt;</span>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt enim, iste doloremque atque ex quod reiciendis eaque asperiores repellendus minima corrupti sed cupiditate nobis, non laboriosam aliquid quos deserunt sequi!
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-product-name">Product Name</h2>
+    <p><a href="text/product-name.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <h1 class="product-name">Product Name</h1>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"product-name"</span><span class="nt">&gt;</span>Product Name<span class="nt">&lt;/h1&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-product-style-id">Product Style ID</h2>
+    <p><a href="text/style-id.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="product-style-id">Style: 23456789</div>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"product-style-id"</span><span class="nt">&gt;</span>Style: 23456789<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-product-size-link">Product Size Link</h2>
+    <p><a href="text/size-link.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <span class="product-size-link"><a href="">Our Size Chart</a></span>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"product-size-link"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>Our Size Chart<span class="nt">&lt;/a&gt;&lt;/span&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-product-remove">Product Remove</h2>
+    <p><a href="text/product-remove.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <span class="product-remove">Remove</span>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"product-remove"</span><span class="nt">&gt;</span>Remove<span class="nt">&lt;/span&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-facet-heading">Facet Heading</h2>
+    <p><a href="text/facet-heading.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <h3 class="facet-heading">Shop By</h3>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"facet-heading"</span><span class="nt">&gt;</span>Shop By<span class="nt">&lt;/h3&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-facet-label">Facet Label</h2>
+    <p><a href="text/facet-label.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="facet-label">
+  Facet Label
+</div>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"facet-label"</span><span class="nt">&gt;</span>
+  Facet Label
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-detail-heading">Detail Heading</h2>
+    <p><a href="text/detail-heading.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <h2 class="detail-heading">Detail Heading</h2>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"detail-heading"</span><span class="nt">&gt;</span>Detail Heading<span class="nt">&lt;/h2&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="text-hr">Horizontal Rule</h2>
+    <p><a href="text/hr.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <hr>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;hr&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+  <h1 class="bucket-heading" id="lists">Lists</h1>
+  <section class="example-wrap">
+  <header>
+    <h2 id="lists-ul">Unordered List</h2>
+    <p><a href="lists/ul.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <ul>
+  <li>Individual style. Clean, modern lines. The exclusive Black Label by Chico's&trade; collection.</li>
+  <li>Concealed snap styling.</li>
+  <li>Chest and hand pockets.
+    <ul>
+      <li>Chest pocket length: 12.5"</li>
+      <li>Hand pocket length: 5"</li>
+    </ul>
+  </li>
+  <li>Length: 23.5".</li>
+  <li>80% cotton, 20% rayon.</li>
+  <li>Machine wash. Imported.</li>
+</ul>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Individual style. Clean, modern lines. The exclusive Black Label by Chico's<span class="ni">&amp;trade;</span> collection.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Concealed snap styling.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Chest and hand pockets.
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Chest pocket length: 12.5"<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Hand pocket length: 5"<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Length: 23.5".<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>80% cotton, 20% rayon.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Machine wash. Imported.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="lists-ul-unstyled">Unordered List (unstyled)</h2>
+    <p><a href="lists/ul-unstyled.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <ul class="list-unstyled">
+  <li>Individual style. Clean, modern lines. The exclusive Black Label by Chico's&trade; collection.</li>
+  <li>Concealed snap styling.</li>
+  <li>Chest and hand pockets.</li>
+  <li>Length: 23.5".</li>
+  <li>80% cotton, 20% rayon.</li>
+  <li>Machine wash. Imported.</li>
+</ul>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Individual style. Clean, modern lines. The exclusive Black Label by Chico's<span class="ni">&amp;trade;</span> collection.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Concealed snap styling.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Chest and hand pockets.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Length: 23.5".<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>80% cotton, 20% rayon.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Machine wash. Imported.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="lists-ol">Ordered List</h2>
+    <p><a href="lists/ol.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <ol>
+  <li>Lorem ipsum dolor sit amet.</li>
+  <li>Consequatur nihil consequuntur voluptas a quae.</li>
+  <li>Soluta placeat praesentium adipisci sint nihil amet, similique eos.</li>
+</ol>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Lorem ipsum dolor sit amet.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Consequatur nihil consequuntur voluptas a quae.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Soluta placeat praesentium adipisci sint nihil amet, similique eos.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="lists-dl">Definition List</h2>
+    <p><a href="lists/dl.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <dl>
+  <dt>Lorem ipsum dolor sit amet</dt>
+  <dd>
+    Quo deserunt temporibus tempora sit officiis maxime eum nemo ducimus. Quasi accusamus, aliquid tenetur neque quibusdam magnam corporis doloribus fuga. Molestias, optio.
+  </dd>
+  <dt>Corporis omnis illo odio ullam nam accusamus</dt>
+  <dd>
+    Aut dolores hic ducimus blanditiis adipisci architecto inventore fugiat. Minima officia numquam nobis inventore veritatis nostrum, voluptatibus voluptas deserunt iure ea! Adipisci.
+  </dd>
+</dl>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;dl&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>
+    Quo deserunt temporibus tempora sit officiis maxime eum nemo ducimus. Quasi accusamus, aliquid tenetur neque quibusdam magnam corporis doloribus fuga. Molestias, optio.
+  <span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Corporis omnis illo odio ullam nam accusamus<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>
+    Aut dolores hic ducimus blanditiis adipisci architecto inventore fugiat. Minima officia numquam nobis inventore veritatis nostrum, voluptatibus voluptas deserunt iure ea! Adipisci.
+  <span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="lists-dl-horizontal">Definition List (horizontal)</h2>
+    <p><a href="lists/dl-horizontal.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <dl class="dl-horizontal">
+  <dt>Ship To Name:</dt>
+  <dd>Brian MacDonald</dd>
+  <dt>Ship To Address:</dt>
+  <dd>
+    123 Main St.<br>
+    Naples, FL 34104<br>
+    USA
+  </dd>
+  <dt>Shipping Method:</dt>
+  <dd>Parcel Post</dd>
+  <dt>Order Total:</dt>
+  <dd>$307.00</dd>
+</dl>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"dl-horizontal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Ship To Name:<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>Brian MacDonald<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Ship To Address:<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>
+    123 Main St.<span class="nt">&lt;br&gt;</span>
+    Naples, FL 34104<span class="nt">&lt;br&gt;</span>
+    USA
+  <span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Shipping Method:<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>Parcel Post<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Order Total:<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>$307.00<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+  <h1 class="bucket-heading" id="images">Images</h1>
+  <section class="example-wrap">
+  <header>
+    <h2 id="images-responsive">Responsive</h2>
+    <p><a href="images/responsive.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="row">
+  <div class="col-md-4">
+    <img class="img-responsive" src="http://placehold.it/200x250&text=Product" alt="">
+  </div>
+</div>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"img-responsive"</span> <span class="na">src=</span><span class="s">"http://placehold.it/200x250&amp;text=Product"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="images-swatches">Swatches</h2>
+    <p><a href="images/product-swatches.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="swatch-wrap">
+  <div class="swatch selected">
+    <label for="">
+      <img src="http://placehold.it/100" alt="">
+    </label>
+    <!-- <input id="" name="" type="radio" value=""> -->
+  </div>
+  <div class="swatch">
+    <label for="">
+      <img src="http://placehold.it/100" alt="">
+    </label>
+    <!-- <input id="" name="" type="radio" value=""> -->
+  </div>
+</div>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swatch-wrap"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swatch selected"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">""</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/100"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+    <span class="c">&lt;!-- &lt;input id="" name="" type="radio" value=""&gt; --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swatch"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">""</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/100"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+    <span class="c">&lt;!-- &lt;input id="" name="" type="radio" value=""&gt; --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="images-thumbs">Product Thumbs</h2>
+    <p><a href="images/thumbs.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <img class="img-responsive" src="http://placehold.it/200x267&text=Product" alt="">
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"img-responsive"</span> <span class="na">src=</span><span class="s">"http://placehold.it/200x267&amp;text=Product"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="images-main">Product Large</h2>
+    <p><a href="images/main.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="product-img-wrap">
+  <img id="product-img" class="img-responsive" src="http://www.chicos.com/Product_Images/570136590_1440.jpg" alt="">
+  <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#gallery-modal"><i class="fa fa-fw fa-external-link"></i> View Full Screen</button>
+</div>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"product-img-wrap"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">id=</span><span class="s">"product-img"</span> <span class="na">class=</span><span class="s">"img-responsive"</span> <span class="na">src=</span><span class="s">"http://www.chicos.com/Product_Images/570136590_1440.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link btn-sm"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#gallery-modal"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-external-link"</span><span class="nt">&gt;&lt;/i&gt;</span> View Full Screen<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+
+
+  <h1 class="bucket-heading" id="forms">Forms</h1>
+  <section class="example-wrap">
+  <header>
+    <h2 id="forms-text">Text Input</h2>
+    <p><a href="forms/text.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="form-group">
+  <label for="label">Label</label>
+  <input type="text" class="form-control" id="label" placeholder="">
+</div>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"label"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"label"</span> <span class="na">placeholder=</span><span class="s">""</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="forms-email">Email Input</h2>
+    <p><a href="forms/email.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="form-group">
+  <label for="email">Email</label>
+  <input type="email" class="form-control" id="email" placeholder="">
+</div>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"email"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"email"</span> <span class="na">placeholder=</span><span class="s">""</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="forms-password">Password Input</h2>
+    <p><a href="forms/password.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="form-group">
+  <label for="password">Password</label>
+  <input type="password" class="form-control" id="password" placeholder="">
+</div>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"password"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"password"</span> <span class="na">placeholder=</span><span class="s">""</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="forms-select">Select Dropdown</h2>
+    <p><a href="forms/select.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="form-group">
+  <label for="select_name">Label *</label>
+  <select class="form-control selectpicker" id="select_name">
+    <option value="">Option 1</option>
+    <option value="">Option 2</option>
+    <option value="">Option 3</option>
+  </select>
+</div>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"select_name"</span><span class="nt">&gt;</span>Label *<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control selectpicker"</span> <span class="na">id=</span><span class="s">"select_name"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>Option 1<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>Option 2<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>Option 3<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="forms-radio">Radio Input</h2>
+    <p><a href="forms/radio.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="radio">
+  <label>
+    <input type="radio" name="radio-options" id="radio-options-1" value="option1" checked>
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="radio-options" id="radio-options-2" value="option2">
+    Option two can be something else and selecting it will deselect option one
+  </label>
+</div>
+<div class="radio disabled">
+  <label>
+    <input type="radio" name="radio-options" id="radio-options-3" value="option3" disabled>
+    Option three is disabled
+  </label>
+</div>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio-options"</span> <span class="na">id=</span><span class="s">"radio-options-1"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    Option one is this and that<span class="ni">&amp;mdash;</span>be sure to include why it's great
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio-options"</span> <span class="na">id=</span><span class="s">"radio-options-2"</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span>
+    Option two can be something else and selecting it will deselect option one
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio disabled"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio-options"</span> <span class="na">id=</span><span class="s">"radio-options-3"</span> <span class="na">value=</span><span class="s">"option3"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+    Option three is disabled
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="forms-checkbox">Checkbox Input</h2>
+    <p><a href="forms/checkbox.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="checkbox">
+  <label>
+    <input type="checkbox" value="">
+    Option one
+  </label>
+</div>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
+    Option one
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="forms-radio-inline">Radio Input (inline)</h2>
+    <p><a href="forms/radio-inline.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+</label>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"inlineRadioOptions"</span> <span class="na">id=</span><span class="s">"inlineRadio1"</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span> 1
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"inlineRadioOptions"</span> <span class="na">id=</span><span class="s">"inlineRadio2"</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span> 2
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"inlineRadioOptions"</span> <span class="na">id=</span><span class="s">"inlineRadio3"</span> <span class="na">value=</span><span class="s">"option3"</span><span class="nt">&gt;</span> 3
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="forms-checkbox-inline">Checkbox Input (inline)</h2>
+    <p><a href="forms/checkbox-inline.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+</label>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox1"</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span> 1
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox2"</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span> 2
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox3"</span> <span class="na">value=</span><span class="s">"option3"</span><span class="nt">&gt;</span> 3
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="forms-textarea">Textarea</h2>
+    <p><a href="forms/textarea.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="form-group">
+  <label for="textarea">Comments</label>
+  <textarea id="textarea" class="form-control" rows="3"></textarea>
+</div>
+
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"textarea"</span><span class="nt">&gt;</span>Comments<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"textarea"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">rows=</span><span class="s">"3"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="forms-phone">Textarea</h2>
+    <p><a href="forms/phone.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="form-group">
+  <label for="phone1">Phone</label>
+  <div class="form-inline form-phone">
+    <input type="text" class="form-control" id="phone1"></input> - 
+    <input type="text" class="form-control" id="phone2"></input> -
+    <input type="text" class="form-control" id="phone3"></input>
+  </div>
+</div>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"phone1"</span><span class="nt">&gt;</span>Phone<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-inline form-phone"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"phone1"</span><span class="nt">&gt;&lt;/input&gt;</span> - 
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"phone2"</span><span class="nt">&gt;&lt;/input&gt;</span> -
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"phone3"</span><span class="nt">&gt;&lt;/input&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="forms-error">Error States</h2>
+    <p><a href="forms/error.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <form>
+  <div class="form-group has-error">
+    <label class="control-label" for="input-error">Input with error</label>
+    <input type="text" class="form-control" id="input-error">
+  </div>
+  <div class="has-error">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" id="checkbox-error" value="checkbox-option-1">
+        Checkbox with error
+      </label>
+    </div>
+  </div>
+  <div class="has-error">
+    <div class="radio">
+      <label>
+        <input type="radio" id="radio-error" value="radio-option-1">
+        Radio with error
+      </label>
+    </div>
+  </div>
+</form>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-error"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span> <span class="na">for=</span><span class="s">"input-error"</span><span class="nt">&gt;</span>Input with error<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"input-error"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"has-error"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkbox-error"</span> <span class="na">value=</span><span class="s">"checkbox-option-1"</span><span class="nt">&gt;</span>
+        Checkbox with error
+      <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"has-error"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"radio-error"</span> <span class="na">value=</span><span class="s">"radio-option-1"</span><span class="nt">&gt;</span>
+        Radio with error
+      <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="forms-error">Help Text</h2>
+    <p><a href="forms/help.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <p class="help-block">Helpful text</p>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>Helpful text<span class="nt">&lt;/p&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+  <h1 class="bucket-heading" id="buttons">Buttons</h1>
+  <section class="example-wrap">
+  <header>
+    <h2 id="buttons-options">Options</h2>
+    <p><a href="buttons/options.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="buttons-sizes">Sizes</h2>
+    <p><a href="buttons/sizes.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <button type="button" class="btn btn-default btn-lg">Large</button>
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-default btn-sm">Small</button>
+<button type="button" class="btn btn-default btn-xs">Extra Small</button>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default btn-lg"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default btn-sm"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default btn-xs"</span><span class="nt">&gt;</span>Extra Small<span class="nt">&lt;/button&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="example-wrap">
+  <header>
+    <h2 id="buttons-block-level">Block Level</h2>
+    <p><a href="buttons/block.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default btn-lg btn-block"</span><span class="nt">&gt;</span>Block level button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+  <h1 class="bucket-heading" id="tables">Tables</h1>
+  <section class="example-wrap">
+  <header>
+    <h2 id="tables-basic">Basic</h2>
+    <p><a href="tables/basic.html"><i class="fa fa-eye"></i></a> <a class="toggle-code-example" href="#"><i class="fa fa-code"></i></a></p>
+  </header>
+  <div class="example">
+    <div class="example-display">
+      <div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Lorem Ipsum</th>
+        <th>Dolor Site Amet</th>
+        <th>Consectetur Elit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Praesentium</td>
+        <td>Tempora</td>
+        <td>Ratione accusamus minus</td>
+      </tr>
+      <tr>
+        <td>Accusantium</td>
+        <td>Adipisicing</td>
+        <td>Laborum maxime suscipit fugit</td>
+      </tr>
+      <tr>
+        <td>Dolor</td>
+        <td>Nihil</td>
+        <td>Voluptates at modi, veritatis</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+    </div>
+    <div class="example-code">
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;th&gt;</span>Lorem Ipsum<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th&gt;</span>Dolor Site Amet<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th&gt;</span>Consectetur Elit<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Praesentium<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Tempora<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Ratione accusamus minus<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Accusantium<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Adipisicing<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Laborum maxime suscipit fugit<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Dolor<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Nihil<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>Voluptates at modi, veritatis<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<div class="col-md-3">
+
+  <div class="scrollspy">
+
+
+    <ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
+
+<!--     <ul class="nav affix standards-nav"> -->
+      <li><a href="#text">Text</a>
+        <ul class="nav">
+          <li><a href="#text-fonts">Fonts</a></li>
+          <li><a href="#text-headings">Headings</a></li>
+          <li><a href="#text-body">Body</a></li>
+          <li><a href="#text-style">Styles</a></li>
+          <li><a href="#text-lead">Lead Copy</a></li>
+          <li><a href="#text-small">Small</a></li>
+          <li><a href="#text-alignment">Alignment</a></li>
+          <li><a href="#text-transform">Transformation</a></li>
+          <li><a href="#text-address">Address</a></li>
+          <li><a href="#text-alerts">Alerts</a></li>
+          <li><a href="#text-well">Well</a></li>
+          <li><a href="#text-product-name">Product Name</a></li>
+          <li><a href="#text-product-style-id">Product Style ID</a></li>
+          <li><a href="#text-product-size-link">Product Size Link</a></li>
+          <li><a href="#text-product-remove">Product Remove</a></li>
+          <li><a href="#text-facet-heading">Facet Heading</a></li>
+          <li><a href="#text-facet-label">Facet Label</a></li>
+          <li><a href="#text-detail-heading">Detail Heading</a></li>
+          <li><a href="#text-hr">Horizontal Rule</a></li>
+        </ul>
+      </li>
+      <li><a href="#lists">Lists</a>
+        <ul class="nav">
+          <li><a href="#lists-ul">Unordered List</a></li>
+          <li><a href="#lists-ul-unstyled">Unordered List (unstyled)</a></li>
+          <li><a href="#lists-ol">Ordered List</a></li>
+          <li><a href="#lists-dl">Definition List</a></li>
+          <li><a href="#lists-dl-horizontal">Definition List (horizontal)</a></li>
+        </ul>
+      </li>
+      <li><a href="#images">Images</a>
+        <ul class="nav">
+          <li><a href="#images-responsive">Responsive</a></li>
+          <li><a href="#images-swatches">Swatches</a></li>
+          <li><a href="#images-thumbs">Product Thumbs</a></li>
+          <li><a href="#images-main">Product Large</a></li>
+          
+        </ul>
+      </li>
+      <li><a href="#forms">Forms</a>
+        <ul class="nav">
+          <li><a href="#forms-text">Text Input</a></li>
+          <li><a href="#forms-email">Email Input</a></li>
+          <li><a href="#forms-password">Password Input</a></li>
+          <li><a href="#forms-select">Select Dropdown</a></li>
+          <li><a href="#forms-radio">Radio Input</a></li>
+          <li><a href="#forms-checkbox">Checkbox Input</a></li>
+          <li><a href="#forms-radio-inline">Radio Input (inline)</a></li>
+          <li><a href="#forms-checkbox-inline">Checkbox Input (inline)</a></li>
+          <li><a href="#forms-textarea">Textarea</a></li>
+          <li><a href="#forms-phone">Phone Number Inputs</a></li>
+          <li><a href="#forms-error">Error States</a></li>
+          <li><a href="#forms-help">Help Text</a></li>    
+        </ul>
+      </li>
+      <li><a href="#buttons">Buttons</a>
+        <ul class="nav">
+          <li><a href="#buttons-options">Options</a></li>
+          <li><a href="#buttons-sizes">Sizes</a></li>
+          <li><a href="#buttons-block-level">Block Level</a></li>
+        </ul>
+      </li>
+      <li><a href="#tables">Tables</a>
+        <ul class="nav">
+          <li><a href="#tables-basic">Basic</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+
+<script src="/ui/assets/js/jquery.zoom.min.js"></script>
+
+
+<script src="/ui/assets/js/select/bootstrap-select.min.js"></script>
+
+<script src="/ui/assets/js/site.js"></script>
+<script src="/ui/assets/js/prototyping/style-switcher.js"></script>
+
+
+<script>
+  $('.selectpicker').selectpicker();
+</script>
+
+
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover();
+  })
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+
+<script>
+  $('.modal .product-img-wrap').zoom({url: 'http://www.chicos.com/Product_Images/570136590_1440_large.jpg'});
+</script>
+
+
+</body>
+</html>
